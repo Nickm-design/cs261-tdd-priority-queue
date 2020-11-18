@@ -7,3 +7,6 @@ class Job:
     def __init__(self, priority = None, message = None):
         self.priority = priority
         self.message = message
+
+    def __eq__(self, comp):
+        return self.priority == comp.priority
