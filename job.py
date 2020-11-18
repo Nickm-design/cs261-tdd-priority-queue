@@ -5,4 +5,5 @@
 class Job:
 
     def __init__(self):
-        pass
+        self.priority = None
+        self.message = None
