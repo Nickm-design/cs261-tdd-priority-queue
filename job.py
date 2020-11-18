@@ -10,3 +10,6 @@ class Job:
 
     def __eq__(self, comp):
         return self.priority == comp.priority
+
+    def __lt__(self, comp):
+        return self.priority < comp.priority
