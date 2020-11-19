@@ -22,3 +22,6 @@ class Job:
 
     def __ge__(self, comp):
         return self.priority >= comp.priority
+    
+    def __repr__(self):
+        return "Job %s: %s" % (self.priority, self.message)
