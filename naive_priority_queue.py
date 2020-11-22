@@ -9,4 +9,7 @@ class NaivePriorityQueue:
     
     def enqueue(self, value):
         return self.data.append(value)
+
+    def dequeue(self):
+        return self.data.pop()
         
