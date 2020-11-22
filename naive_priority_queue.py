@@ -5,7 +5,8 @@
 class NaivePriorityQueue:
 
     def __init__(self):
-        self.data = [[]]
+        self.data = []
     
     def enqueue(self, value):
-        self.data[0] = value
+        return self.data.append(value)
+        
