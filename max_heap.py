@@ -15,3 +15,8 @@ class MaxHeap:
 
    def _is_empty(self):
       return self._data == []
+
+   def _last_index(self):
+      if self._is_empty():
+         return self._size() - 1
+      return self
