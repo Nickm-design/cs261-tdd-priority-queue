@@ -34,4 +34,6 @@ class MaxHeap:
       return (value // 2) 
 
    def _parent(self, value):
+      if value != self._parent_index(value):
+         raise IndexError()
       return self._value_at(value)
