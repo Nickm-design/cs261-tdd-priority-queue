@@ -11,8 +11,9 @@ class NaivePriorityQueue:
         return self.data.append(value)
 
     def dequeue(self):
-        self.data.sort()
-        return self.data.pop()
+        if self.data != []:
+            self.data.sort()
+            return self.data.pop()
     
     def is_empty(self):
         return self.data == []
