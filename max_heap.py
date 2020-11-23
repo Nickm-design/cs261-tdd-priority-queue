@@ -32,3 +32,6 @@ class MaxHeap:
       if value % 2 == 0:
          return (value // 2) -1
       return (value // 2) 
+
+   def _parent(self, value):
+      return self._value_at(value)
