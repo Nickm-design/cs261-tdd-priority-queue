@@ -13,3 +13,6 @@ class NaivePriorityQueue:
     def dequeue(self):
         self.data.sort()
         return self.data.pop()
+    
+    def is_empty(self):
+        return self.data == []
