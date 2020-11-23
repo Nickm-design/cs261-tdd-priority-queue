@@ -88,16 +88,16 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # # Hint: NaivePriorityQueues perform a linear search. Don't optimize.
 
-    # def test_dequeue_two(self):
-    #     """
-    #     Dequeuing from a two-element queue returns the one with highest priority.
-    #     """
-    #     pq = NaivePriorityQueue()
-    #     lower_priority = Job(1, 'of')
-    #     higher_priority = Job(3, 'the')
-    #     pq.enqueue(higher_priority)
-    #     pq.enqueue(lower_priority)
-    #     self.assertEqual(higher_priority, pq.dequeue())
+    def test_dequeue_two(self):
+        """
+        Dequeuing from a two-element queue returns the one with highest priority.
+        """
+        pq = NaivePriorityQueue()
+        lower_priority = Job(1, 'of')
+        higher_priority = Job(3, 'the')
+        pq.enqueue(higher_priority)
+        pq.enqueue(lower_priority)
+        self.assertEqual(higher_priority, pq.dequeue())
 
     # def test_dequeue_two_internal(self):
     #     """
