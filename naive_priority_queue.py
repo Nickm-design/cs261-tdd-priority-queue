@@ -14,6 +14,7 @@ class NaivePriorityQueue:
         if self.data != []:
             self.data.sort()
             return self.data.pop()
+        return None
     
     def is_empty(self):
         return self.data == []
